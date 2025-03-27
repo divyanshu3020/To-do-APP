@@ -1,0 +1,66 @@
+<%- include('partials/header.ejs'); -%>
+
+  <div class="box" id="heading">
+
+    <!-- title for the to-do list eg:Today. -->
+    <h1>
+      <%= listTitle %>
+    </h1>
+  </div>
+
+  <!-- listTitle & listItems are the data that is coming from the server. -->
+  <div class="box">
+    <!-- looping through each listItems and printing them. -->
+    <% for(let item of listItems){%>
+      <div class="item">
+        <form action="/delete" method="post">
+          <input type="checkbox" onchange="this.form.submit()" name="deleteItemId" value="<%= item.id %>">
+        </form>
+
+        <!-- this is the context of the to-do list. -->
+         <!-- it will disappear when edit button will get hit. -->
+        <p id="title<%=item.id%>">
+          <%= item.title %>
+        </p>
+
+        <!-- these are the hiddin input feilds that will appear when "pencil button" means edit button will click -->
+        <form class="edit" action="/edit" method="post">
+          <input type="hidden" name="updatedItemId" value="<%= item.id %>">
+          <input id="input<%=item.id%>" type="text" name="updatedItemTitle" value="<%= item.title %>" autocomplete="off"
+            autofocus="true" hidden="true" />
+          <button id="done<%=item.id%>" class="edit" type="submit" hidden><img class="icon"
+              src="/assets/icons/check-solid.svg" alt="tick image"></button>
+        </form>
+
+        <!-- this is edit button that will remove the hidden attribute from the edit input feilds(above this) -->
+        <button id="edit<%=item.id%>" class="edit" onclick="handler('<%=item.id%>')"><img class="icon"
+            src="/assets/icons/pencil-solid.svg" alt="pencil image"></button>
+      </div>
+      <% } %>
+
+      <!-- this form is for add new to-do -->
+        <form class="item" action="/add" method="post">
+          <input type="text" name="newItem" placeholder="New Item" autocomplete="off" autofocus="true" />
+          <button class="add" type="submit" name="list" value=<%=listTitle %> >+</button>
+        </form>
+
+        
+  </div>
+  
+  <form action="/deleteAll" method="post" onsubmit="return confirmDelete();">
+    <button class="deleteAll" type="submit">Remove All</button>
+  </form>
+
+  <script>
+    function handler(id) {
+      document.getElementById("title" + id).setAttribute("hidden", true)
+      document.getElementById("edit" + id).setAttribute("hidden", true)
+      document.getElementById("done" + id).removeAttribute("hidden")
+      document.getElementById("input" + id).removeAttribute("hidden")
+    }
+
+    function confirmDelete() {
+    return confirm("⚠️ Are you sure you want to delete ALL data? This action cannot be undone!");
+  }
+  </script>
+  <%- include('partials/footer.ejs'); -%>
