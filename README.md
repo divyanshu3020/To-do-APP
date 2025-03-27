@@ -16,53 +16,53 @@ This is a **To-Do List App** that helps you manage your daily tasks efficiently.
 
 ## 📌 Technologies Used
 
-    * Frontend: HTML, CSS, JavaScript
-    * Backend: Node.js, Express.js
-    * Database: PostgreSQL
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: Node.js, Express.js
+- **Database**: PostgreSQL
 
 ---
 
 ## 📥 How to Clone & Run This App Locally
 
-    ### 1️⃣ Clone the Repository
+### 1️⃣ Clone the Repository
 
-    Open **Git Bash** or **Terminal**, then run:  
+Open **Git Bash** or **Terminal**, then run:  
 
-        git clone <repository_url>
+-git clone <repository_url>
 
-        "Replace <repository_url> with the actual URL of your GitHub repository."
+-"Replace <repository_url> with the actual URL of your GitHub repository."
 
-    ### 2️⃣ Navigate to the Project Directory
+### 2️⃣ Navigate to the Project Directory
 
-        cd to-do-app
+    -cd to-do-app
 
-    ### 3️⃣ Install Dependencies
+### 3️⃣ Install Dependencies
 
-        npm install
+    -npm install
 
-    ### 4️⃣ Set Up the Database
+### 4️⃣ Set Up the Database
 
-        Heads up to queries.sql and run those commands in pgadmin4 to set your database.
+    -Heads up to queries.sql and run those commands in pgadmin4 to set your database.
 
-    ### 5️⃣ Configure the Database in the Code
+### 5️⃣ Configure the Database in the Code
 
-        In the server.js file, update the database connection details:
+In the server.js file, update the database connection details:
 
-        const db = new pg.Client({
-            user: "your_username", //otherwise postgres
-            password: "your_password",
-            host: "localhost",
-            database: "your_database",
-            port: 5234,
-        });
+    const db = new pg.Client({
+        user: "your_username", //otherwise postgres
+        password: "your_password",
+        host: "localhost",
+        database: "your_database",
+        port: 5234,
+    });
 
-    ### 6️⃣ Run the App
+### 6️⃣ Run the App
 
-        npm start
+-npm start
 
-        or 
+-or 
 
-        nodemon index.js / node index.js
+-nodemon index.js / node index.js
 
-        The app will be running on http://localhost:3000 🎉
+-The app will be running on http://localhost:3000 🎉
 
