@@ -19,7 +19,7 @@ This is a **To-Do List App** that helps you manage your daily tasks efficiently.
 
 ## 📌 Technologies Used
 
-- **Frontend**: HTML, CSS, JavaScript
+- **Frontend**: EJS, CSS, JavaScript
 - **Backend**: Node.js, Express.js
 - **Database**: PostgreSQL
 
@@ -32,9 +32,8 @@ This is a **To-Do List App** that helps you manage your daily tasks efficiently.
 
 Open **Git Bash** or **Terminal**, then run:  
 
-    git clone <repository_url>
+    git clone https://github.com/divyanshu3020/To-do-APP.git
 
-"Replace <repository_url> with the actual URL of your GitHub repository."
 
 ### 2️⃣ Navigate to the Project Directory
 
@@ -46,7 +45,7 @@ Open **Git Bash** or **Terminal**, then run:
 
 ### 4️⃣ Set Up the Database
 
-Heads up to queries.sql and run those commands in pgadmin4 to set your database.
+-Heads up to queries.sql and run those commands in pgadmin4 to set your database.
 
 ### 5️⃣ Configure the Database in the Code
 
