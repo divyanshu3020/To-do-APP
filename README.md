@@ -1,10 +1,12 @@
 # TO-DO APP
 
+
 ## 📌 App Description
 This is a **To-Do List App** that helps you manage your daily tasks efficiently.  
 - **Persistent Storage:** Your tasks remain saved even after refreshing the page.  
 
 ---
+
 
 ## 🚀 Features
 - **Add Tasks** – Easily add new to-dos to your list.  
@@ -14,6 +16,7 @@ This is a **To-Do List App** that helps you manage your daily tasks efficiently.
 
 ---
 
+
 ## 📌 Technologies Used
 
 - **Frontend**: HTML, CSS, JavaScript
@@ -22,13 +25,14 @@ This is a **To-Do List App** that helps you manage your daily tasks efficiently.
 
 ---
 
+
 ## 📥 How to Clone & Run This App Locally
 
 ### 1️⃣ Clone the Repository
 
 Open **Git Bash** or **Terminal**, then run:  
 
-    -git clone <repository_url>
+    git clone <repository_url>
 
 "Replace <repository_url> with the actual URL of your GitHub repository."
 
@@ -38,7 +42,7 @@ Open **Git Bash** or **Terminal**, then run:
 
 ### 3️⃣ Install Dependencies
 
-    -npm install
+    npm install
 
 ### 4️⃣ Set Up the Database
 
