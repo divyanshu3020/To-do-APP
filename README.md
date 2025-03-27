@@ -1,21 +1,21 @@
 # TO-DO APP
 
-
 ## 📌 App Description
-This is a **To-Do List App** that helps you manage your daily tasks efficiently.  
-- **Persistent Storage:** Your tasks remain saved even after refreshing the page.  
+
+This is a **To-Do List App** that helps you manage your daily tasks efficiently.
+
+- **Persistent Storage:** Your tasks remain saved even after refreshing the page.
 
 ---
-
 
 ## 🚀 Features
-- **Add Tasks** – Easily add new to-dos to your list.  
-- **Edit Tasks** – Update any existing to-do.  
-- **Mark as Completed** – Check the box to remove a completed task.  
-- **Delete All** – Remove all tasks with a single click.  
+
+- **Add Tasks** – Easily add new to-dos to your list.
+- **Edit Tasks** – Update any existing to-do.
+- **Mark as Completed** – Check the box to remove a completed task.
+- **Delete All** – Remove all tasks with a single click.
 
 ---
-
 
 ## 📌 Technologies Used
 
@@ -25,15 +25,13 @@ This is a **To-Do List App** that helps you manage your daily tasks efficiently.
 
 ---
 
-
 ## 📥 How to Clone & Run This App Locally
 
 ### 1️⃣ Clone the Repository
 
-Open **Git Bash** or **Terminal**, then run:  
+Open **Git Bash** or **Terminal**, then run:
 
     git clone https://github.com/divyanshu3020/To-do-APP.git
-
 
 ### 2️⃣ Navigate to the Project Directory
 
@@ -63,9 +61,8 @@ In the server.js file, update the database connection details:
 
     npm start
 
-or 
+or
 
     nodemon index.js / node index.js
 
 The app will be running on http://localhost:3000 🎉
-
